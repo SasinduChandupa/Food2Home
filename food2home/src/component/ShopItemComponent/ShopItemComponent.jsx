@@ -120,7 +120,7 @@ const ShopItemComponent = () => {
 
   return (
     <div className="shop-container">
-      <h2 className="section-title">Fresh Vegetables</h2>
+      <h2 className="section-title">Shop Now</h2>
       <div className="shop-items">
         {vegetables.map((item, index) => (
           <div key={index} className="shop-item">

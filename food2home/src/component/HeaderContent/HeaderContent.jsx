@@ -31,7 +31,6 @@ const HeaderContent = () => {
         <Link to="/shop" className="header-link">Shop</Link>
         <Link to="/services" className="header-link">Our Services</Link>
         <Link to="/about" className="header-link">About</Link>
-        <Link to="/contact" className="header-link">Contact</Link>
         <div className="call-link">Call</div>
         <button className="login-btn">Login</button>
       </div>
