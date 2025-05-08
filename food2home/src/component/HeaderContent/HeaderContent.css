@@ -1,0 +1,163 @@
+/* Base Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34ac10;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  padding-left: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-main {
+  color: #ffffff;
+}
+
+.brand-secondary {
+  color: #333333;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 80px;
+}
+
+.nav-links a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+.call-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 20px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-link::before {
+  content: "📞";
+  margin-right: 5px;
+}
+
+.call-link:hover {
+  background-color: #ffffff;
+}
+
+.login-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 8px 20px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0d8a3d;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  margin-right: 25px;
+}
+
+.hamburger .line {
+  margin: 20px;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .call-link {
+    width: 80%;
+    text-align: center;
+    justify-content: center; /* Ensure centered in mobile */
+    padding: 10px 0;
+    display: flex; /* Keep flex for icon alignment */
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #00ff80;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links a,
+  .login-btn {
+    width: 80%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .login-btn {
+    margin-top: 10px;
+  }
+}
+
+/* Animation for Hamburger when active */
+.nav-links.active ~ .hamburger .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-links.active ~ .hamburger .line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-links.active ~ .hamburger .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

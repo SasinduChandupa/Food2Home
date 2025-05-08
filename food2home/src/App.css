@@ -1,0 +1,18 @@
+/* Set white background for entire app */
+body, html, #root {
+
+  background-color: white;
+}
+
+.app-container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+
+/* Add this to prevent white gaps on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+      background-color: #00ff80; /* Match your navbar color */
+  }
+}
