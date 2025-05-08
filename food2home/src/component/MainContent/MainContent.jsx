@@ -18,7 +18,7 @@ const MainContent = () => {
 
             {/* Mobile-only image */}
             <div className="mobile-hero-image">
-              <img src="/A.png" alt="Fresh local produce" />
+              <img src="/AA.png" alt="Fresh local produce" />
             </div>
 
             <div className="search-bar">
@@ -33,7 +33,7 @@ const MainContent = () => {
           </div>
           
           <div className="hero-image">
-            <img src="/A.png" alt="Fresh local produce" />
+            <img src="/AA.png" alt="Fresh local produce" />
           </div>
         </div>
 

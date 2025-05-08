@@ -1,7 +1,9 @@
 /* Footer Styles */
 .footer {
-    background-color: #1d491dec;
-    color: #fff;
+    background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), 
+      url('https://cdn.pixabay.com/photo/2023/09/01/20/22/garlic-8227658_640.jpg');
+    background-size: cover;
+    background-position: center;  
     padding: 0 0 0;
     font-family: 'Segoe UI', sans-serif;
     margin-top: 2rem;
@@ -124,7 +126,7 @@
   }
   
   .footer-bottom {
-    background-color: #1e3a1e;
+    background-color: #00000096;
     padding: 1.5rem 0;
     text-align: center;
     margin-top: 3rem;
@@ -133,7 +135,9 @@
   .footer-bottom p {
     margin: 0;
     font-size: 0.9rem;
-    color: #b1b1b1;
+    color: #ffffff;
+    font:200;
+
   }
   
   /* Responsive Design */

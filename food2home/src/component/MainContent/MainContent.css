@@ -19,8 +19,10 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: white;
-  }
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0)), 
+                    url('b.jpg');
+    background-size: cover;
+    background-position: center;  }
   
   /* Brand Title */
   .brand-title {
@@ -165,7 +167,7 @@
   }
   
   .guarantees span {
-    color: #3a7d44;
+    color: #013309;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -183,7 +185,7 @@
   
   .benefit-card {
     flex: 1;
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.788);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -242,9 +244,7 @@
     }
     
     .mobile-hero-image img {
-      max-width: 80%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: none;
     }
     
     .hero-text {
@@ -294,7 +294,8 @@
     }
     
     .benefit-card {
-      width: 100%;
+      width: 90%;
       max-width: none;
+      background-color: rgba(255, 255, 255, 0.788);
     }
   }
